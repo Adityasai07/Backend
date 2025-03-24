@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome, <%= userName %>!</h1>
+        <p>User ID: <%= userId %></p>
+        <p>Email: <%= userEmail %></p>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Cart</a>
+            <a href="SignIn">Sign In</a>
+            <form action="/logout" method="GET">
+                <button type="submit">Logout</button>
+            </form>
+        </nav>
+    </header>
+    <section class="product-list">
+        <div class="product">
+            <img src="https://via.placeholder.com/150" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>$25.00</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/150" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>$30.00</p>
+            <button>Add to Cart</button>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
